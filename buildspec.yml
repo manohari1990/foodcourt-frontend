@@ -17,7 +17,7 @@ phases:
       - echo Deploying to S3...
       - aws s3 sync dist/ s3://foodcourt-frontend-deployment-cicd-631534400893-ap-south-2-an --delete
       - echo Invalidating CloudFront...
-      - aws cloudfront create-invalidation --distribution-id E3RMSY19XRXA95 --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E2GXUKYKY3UTQ1 --paths "/*"
 
 artifacts:
   files:
